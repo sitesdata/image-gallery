@@ -1,0 +1,43 @@
+.gallery-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-filters .button {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.item {
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+.item:hover figcaption {
+    display: block;
+}
+
+/* Additional styles for responsiveness and aesthetics */
